@@ -1,0 +1,106 @@
+body {
+  background-color: #000000;
+}
+
+#root {
+  height: 100%;
+  font-size: 20px;
+
+  font-family: "Berlin Sans FB";
+  color: #CC00CC;
+  background-color: #000000;
+}
+
+.app {
+  width: 100%;
+  max-width: 630px;
+  margin: 0 auto;
+}
+
+/*board*/
+
+.app-board {
+  margin: 0 -5px 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-row {
+  flex: 1 1;
+  display: flex;
+  justify-content: center;
+}
+
+.square {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+
+  font-size: 100px;
+
+  color: #FFFF66;
+  background-color: #001933;
+  border-radius: 5%;
+  border: 2px solid #000000;
+  transition: all .1s linear;
+}
+
+.square_selected {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+
+  font-size: 100px;
+
+  color: #FFFF66;
+  background-color: #001933;
+  border-radius: 5%;
+  border: 2px solid #b90000;
+  transition: all .1s linear;
+}
+
+.square:hover {
+  border: 2px solid #001933;
+  background-color: #003366;
+}
+
+.status {
+  font-size: 50px;
+  padding: 5px 0;
+}
+
+.status-x {
+  color: #FF6666;
+}
+
+.status-o {
+  color: #FFFF66;
+}
+
+.value-x {
+  color: #FF6666;
+}
+
+.value-o {
+  color: #FFFF66;
+}
+
+ul {
+  list-style: none;
+  margin: 0 0 0 -33px;
+  background-color: #000000;
+}
+
+.history-button {
+  font-family: "Berlin Sans FB";
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  margin: 2px 0;
+
+  color: #CC00CC;
+  background-color: #001933;
+}
